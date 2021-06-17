@@ -1,0 +1,37 @@
+body {
+  background-color: #f6f6f6;
+  color: #333333;
+  font-family: 'Open Sans', sans-serif
+}
+
+ul {
+  background-color: #333333;
+  color: #f6f6f6;
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+
+.link {
+  color: #b90504;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #990100;
+  border-radius: 4px;
+  padding: 4px 4px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.paragraph {
+  background-color: #333333;
+  color: #f6f6f6;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.picture {
+  border-radius: 50%;
+}
