@@ -1,0 +1,88 @@
+/* Palette: rgb(0, 0, 0) rgb(255, 255, 255)
+rgb(52, 55, 66)
+rgb(141, 153, 174)
+rgb(228, 228, 244)
+rgb(239, 35, 60) */
+
+body {
+  background-color: rgb(253, 251, 251);
+  color: rgb(52, 55, 66);
+  font-family: Teko, sans-serif;
+  font-size: x-large;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+button {
+  background-color: rgb(52, 55, 66);
+  border: none;
+  border-radius: 8px;
+  color: rgb(228, 228, 244);
+  display: inline-block;
+  font-family: Teko, sans-serif;
+  font-size: medium;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: rgb(141, 153, 174);
+  color: rgb(52, 55, 66);
+}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+hr {
+  border: rgb(239, 35, 60) solid 1px;
+}
+
+input {
+  font-family: Teko, sans-serif;
+  font-size: x-large;
+  width: 40px;
+}
+
+span {
+  letter-spacing: 0;
+}
+
+#board-size-div {
+  margin-top: 20px;
+}
+
+.color {
+  border-radius: 50%;
+}
+
+.color , .pixel {
+  display: inline-block;
+  border: black solid;
+  border-width: 1px;
+  height: 40px;
+  width: 40px;
+}
+
+.pixel {
+  background-color: white;
+}
+
+#pixel-board div {
+  height: 40px;
+}
+
+footer {
+  bottom: 0;
+  font-size: medium;
+  letter-spacing: 2px;
+  margin-top: 80px;
+  position: relative;
+}
+
+#link {
+  color: rgb(239, 35, 60);
+  text-decoration: none;
+}

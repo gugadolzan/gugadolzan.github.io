@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+  <title>Project Pixels Art - Gustavo Dolzan</title>
+</head>
+
+<body>
+  <h1 id="title">Paleta de Cores</h1>
+  <hr>
+  <main>
+    <section id="color-palette">
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+    </section>
+    <div id="board-size-div">
+      <span>Defina o tamanho do quadro: </span>
+      <input type="number" id="board-size" min="1">
+      <button id="generate-board">VQV</button>
+    </div>
+    <button id="clear-board">Limpar</button>
+    <section id="pixel-board">
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <span>Todos os direitos reservados, <a id="link" href="https://www.linkedin.com/in/gustavo-dolzan/"
+        target="_blank">Gustavo Dolzan</a>, 2021-07-08</span>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
