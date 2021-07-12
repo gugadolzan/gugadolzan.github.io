@@ -39,8 +39,7 @@ button:hover {
 }
 
 input {
-  background-color: rgb(160, 160, 160);
-  color: white;
+  background-color: gainsboro;
   padding: 4px;
   transition: width 0.4s ease-in-out;
 }

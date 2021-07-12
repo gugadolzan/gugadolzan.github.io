@@ -9,10 +9,10 @@ const classes = [ // An empty string for each class for none class
   ['skewleft', 'skewright'],
 ];
 
-function randomClasses(letter) {
+function randomClasses(word) {
   for (let index = 0; index < classes.length; index += 1) {
     if (Math.random() < 0.5) { // 50/50 condition
-      letter.classList.add(classes[index][Math.floor(Math.random() * (classes[index].length))]); // Adds a random class from classes array if previous condition is true
+      word.classList.add(classes[index][Math.floor(Math.random() * (classes[index].length))]); // Adds a random class from classes array if previous condition is true
     }
   }
 }
@@ -42,3 +42,16 @@ function generateLetter() {
   });
 }
 generateLetter();
+
+function generateSingleWordStyle() {
+  document.addEventListener('click', (event) => { // Event Bubbling
+    const element = event;
+    if (element.target.classList.length >= 2) { // Condition for checking if is it a word - without creating a new class
+      element.target.className = ''; // Clears style classes
+      while (element.target.classList.length < 2) { // Condition for at least two classes
+        randomClasses(element.target);
+      }
+    }
+  });
+}
+generateSingleWordStyle();
