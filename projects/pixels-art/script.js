@@ -3,15 +3,11 @@ const pixelBoardSection = document.getElementById('pixel-board');
 function createPixelBoard(numberImput) {
   for (let lines = 0; lines < numberImput; lines += 1) {
     const line = document.createElement('div');
-
     for (let columns = 0; columns < numberImput; columns += 1) {
       const pixel = document.createElement('div');
-
       pixel.classList.add('pixel');
-
       line.appendChild(pixel);
     }
-
     pixelBoardSection.appendChild(line);
   }
 }
@@ -21,17 +17,10 @@ document.querySelector('.color').classList.add('selected'); // Selects first div
 
 function selectColor() {
   const colorPalette = document.getElementById('color-palette');
-  const color = document.getElementsByClassName('color');
-
   function select(event) {
-    for (let index = 0; index < color.length; index += 1) {
-      if (color[index].classList.value.includes('selected')) { // Verifies if each color has 'selected' class
-        color[index].classList.remove('selected'); // Removes the class
-      }
-    }
+    document.querySelector('.selected').classList.remove('selected'); // Removes the class from selected color
     event.target.classList.add('selected'); // Adds the class for selected/clicked color
   }
-
   colorPalette.addEventListener('click', select);
 }
 selectColor();
@@ -44,22 +33,18 @@ function paint() {
       element.target.style.backgroundColor = pincelColor;
     }
   }
-
   pixelBoardSection.addEventListener('click', painting);
 }
 paint();
 
 function clearBoard() {
   const clearButton = document.getElementById('clear-board');
-
   function whiteBoard() {
     const pixel = document.getElementsByClassName('pixel');
-
     for (let index = 0; index < pixel.length; index += 1) {
       pixel[index].style.backgroundColor = 'rgb(255, 255, 255)';
     }
   }
-
   clearButton.addEventListener('click', whiteBoard);
 }
 clearBoard();
@@ -76,10 +61,8 @@ function inputValidation(inputValue) {
 
 function insertBoardRange() {
   const inputButton = document.getElementById('generate-board');
-
   function boardRange() {
     const inputValue = document.getElementById('board-size').value;
-
     if (!inputValue) {
       alert('Board inválido!');
     } else if (inputValue > 0) {
@@ -103,9 +86,7 @@ function generateRandomColor() {
 function setRandomColor() {
   // document.getElementsByClassName('color')[5].style.backgroundColor
   const color = document.getElementsByClassName('color');
-
   color[0].style.backgroundColor = 'rgb(0, 0, 0)'; // Sets first color as black
-
   for (let index = 1; index < color.length; index += 1) {
     color[index].style.backgroundColor = generateRandomColor();
   }
