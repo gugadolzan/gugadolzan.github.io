@@ -1,0 +1,133 @@
+* {
+  background-color: rgb(240, 240, 240);
+  font-family: Encode Sans SC, sans-serif;
+  margin: auto;
+  width: 90%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input , button {
+  border: none;
+  border-radius: 12px;
+  display: grid;
+  margin-top: 12px;
+  width: 200px;
+}
+
+button {
+  background-color: #008cba;
+  border: 2px solid #008cba;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  padding: 8px;
+  font-weight: 700;
+  transition-duration: 0.1s;
+}
+
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+button:hover {
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+input {
+  background-color: rgb(160, 160, 160);
+  color: white;
+  padding: 4px;
+  transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+  width: 100%;
+}
+
+span {
+  display: inline-block;
+  margin-right: 16px;
+  width: auto;
+}
+
+footer {
+  margin-top: 200px;
+  text-align: center;
+}
+
+#carta-gerada {
+  margin: 80px 0;
+}
+
+#carta-contador , #titulo-contador {
+  text-align: center;
+}
+
+#carta-contador {
+  font-weight: 700;
+}
+
+#titulo-contador {
+  font-style: italic;
+}
+
+#link {
+  text-decoration: none;
+}
+
+.newspaper {
+  background-color: antiquewhite;
+  font-family: Times New Roman, Times, serif;
+  font-weight: 700;
+}
+
+.magazine1 {
+  background-color: teal;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.magazine2 {
+  background-image: url('images/pink-pattern.png');
+  color: fuchsia;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+}
+
+.medium {
+  font-size: 20px;
+  padding: 8px;
+}
+
+.big {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.reallybig {
+  font-size: 40px;
+  padding: 15px;
+}
+
+.rotateleft {
+  transform: rotate(-5deg);
+}
+
+.rotateright {
+  transform: rotate(5deg);
+}
+
+.skewleft {
+  transform: skewX(10deg);
+}
+
+.skewright {
+  transform: skewX(-10deg);
+}
