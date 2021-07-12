@@ -2,7 +2,7 @@ const input = document.getElementById('carta-texto');
 const inputButton = document.getElementById('criar-carta');
 const outputParagraph = document.getElementById('carta-gerada');
 const wordCounter = document.getElementById('carta-contador');
-const classes = [ // An empty string for each class for none class
+const classes = [
   ['newspaper', 'magazine1', 'magazine2'],
   ['medium', 'big', 'reallybig'],
   ['rotateleft', 'rotateright'],
@@ -11,7 +11,7 @@ const classes = [ // An empty string for each class for none class
 
 function randomClasses(word) {
   for (let index = 0; index < classes.length; index += 1) {
-    if (Math.random() < 0.5) { // 50/50 condition
+    if (Math.random() < 0.5) { // 50/50 condition; for adding or not a class from the specific group
       word.classList.add(classes[index][Math.floor(Math.random() * (classes[index].length))]); // Adds a random class from classes array if previous condition is true
     }
   }
