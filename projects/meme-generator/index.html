@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator Project - Gustavo Dolzan</title>
+</head>
+
+<body>
+  <h1>MEME GENERATOR</h1>
+  <main>
+    <label id="text-input-label">TEXTO: <input type="text" id="text-input" maxlength="60"></label>
+    <!-- Reference for displaying image: https://www.codegrepper.com/code-examples/html/input+type%3D%22file%22+and+display+image -->
+    <label id="meme-insert-label"><u>INSIRA UMA IMAGEM DE FUNDO</u><input type="file" accept="image/*" name="image" id="meme-insert"></label>
+    <label>OU ESCOLHA UMA:
+      <img src="/imgs/meme1.png" alt="Meme 1" id="meme-1" class="presets-meme">
+      <img src="/imgs/meme2.png" alt="Meme 1" id="meme-2" class="presets-meme">
+      <img src="/imgs/meme3.png" alt="Meme 1" id="meme-3" class="presets-meme">
+      <img src="/imgs/meme4.png" alt="Meme 1" id="meme-4" class="presets-meme">
+    </label>
+    <section id="meme-image-container">
+      <img alt="Generated meme" id="meme-image">
+      <span id="meme-text"></span>
+    </section>
+    <section id="meme-frames">
+      <label>MOLDURAS:</label>
+      <button id="fire">Fogo</button>
+      <button id="water">Água</button>
+      <button id="earth">Terra</button>
+    </section>
+  </main>
+  <footer><a id="link" href="https://www.linkedin.com/in/gustavo-dolzan/" target="_blank">Gustavo Dolzan</a>. Todos
+    direitos reservados, 09/07/2021.</footer>
+  <script src="/script.js"></script>
+</body>
+
+</html>
