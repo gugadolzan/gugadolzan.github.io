@@ -1,0 +1,42 @@
+#answer-color {
+  background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(13, 110, 253, 1));
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#answer-color div {
+  margin: 8px;
+}
+
+#answer-color div:hover {
+  opacity: 0.5;
+  transition: ease-in-out 0.1s;
+}
+
+.ball {
+  border-radius: 50%;
+  border: 2px solid white;
+  height: 50px;
+  width: 50px;
+}
+
+footer {
+  margin-top: 200px;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+}
+
+#link {
+  text-decoration: none;
+}
+
+.main-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

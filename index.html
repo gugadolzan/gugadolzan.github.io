@@ -1,56 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gustavo Dolzan - Portfolio</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-  <a class="link" href="#about">Sobre</a>
-  <a class="link" href="#social">Redes</a>
-  <a class="link" href="#skills">Habilidades</a>
-  <a class="link" href="#links">Links</a>
-  <hr>
-  <div class="header">
-    <h1>Gustavo Walter Bartel Dolzan</h1>
-    <div>
-      <img class="picture" src="images/profile.png" alt="Foto de perfil" width="200px" id="profile">
-      <p class="about" id="about">Olá, me chamo Gustavo Dolzan, mas pode me chamar de Biza (todo mundo me chama
-        de Biza). Tenho 22 anos, sou <strong>brasileiro</strong> e hoje moro em <strong>Santa
-          Catarina</strong>.<br><br>Atualmente estudo Desenvolvimento Web na Trybe e Ciências Econômicas na Cruzeiro do
-        Sul Virtual.</p>
-    </div>
-  </div>
-  <h3 id="social">Redes:</h3>
-  <a class="button link" href="https://github.com/gugadolzan" target="_blanck">GitHub</a>
-  <a class="button link" href="https://www.linkedin.com/in/gustavo-dolzan/" target="_blanck">LinkedIn</a>
-  <hr>
-  <h2 id="skills">Habilidades</h2>
-  <ul>
-    <li><strong>Capacidade analítica e estratégica;</strong></li>
-    <li>Compromisso com a excelência;</li>
-    <li>Comunicação;</li>
-    <li>Foco;</li>
-    <li>Integridade;</li>
-    <li>Organização;</li>
-    <li>Trabalho em equipe.</li>
-  </ul>
-  <hr>
-  <p>📷 <a class="link" href="#profile">Foto de perfil</a></p>
-  <p id="links">📈 <a class="button link" href="https://findocs.com.br/" target="_blanck">FinDocs</a><em> - Uma
-      plataforma educacional de finanças e negócios com aulas divididas entre finanças pessoais, investimentos em renda
-      fixa e variável, análise de empresas e resultados, finanças para negócios, empreendedorismo, e muito mais!</em>
-  </p>
-  <p></p>
-  <hr>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gustavo Dolzan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="header-section">
+      <p class="h6">GUSTAVO DOLZAN</p>
+      <nav id="header-nav">
+        <!-- <li class="list-inline-item h6"><a href="#home">HOME</a></li> -->
+        <li class="list-inline-item h6">
+          <a href="#about-me">ABOUT ME</a>
+        </li>
+        <li class="list-inline-item h6"><a href="#projects">PROJECTS</a></li>
+        <!-- <li class="list-inline-item h6"><a href="">CONTACT</a></li> -->
+      </nav>
+    </section>
+    <section id="home">
+      <section id="socials">
+        <a href="https://github.com/gugadolzan" target="blank"
+          ><img src="images/socials-icons/github.png" alt="GitHub"
+        /></a>
+        <a href="https://www.linkedin.com/in/gustavo-dolzan/" target="blank"
+          ><img src="images/socials-icons/linkedin.png" alt="LinkedIn"
+        /></a>
+      </section>
+      <section id="main-text-section">
+        <p class="display-4 font-monospace">
+          <span>'</span>Hello world<span>'</span>
+        </p>
+        <p class="display-4" id="main-text">
+          I am <span id="name">Gustavo</span>, aka Biza.
+        </p>
+      </section>
+      <img id="profile-img" src="images/profile.png" alt="Profile picture" />
+    </section>
+    <section id="about-me">
+      <p class="lead">Web Development Student at Trybe | Economics Student</p>
+      <p class="lead">
+        Looking for an opportunity to develop myself professionally. Passionate
+        about finance, technology and programming. I hope to be able to
+        establish an integration between programming and investing. Specifically
+        curious about investing, I seek knowledge from references in this area.
+      </p>
+    </section>
+    <section id="projects">
+      <p class="display-6">
+        Some of my projects developed during fundamentals module at
+        <a href="https://www.betrybe.com/" target="blank">Trybe</a>
+      </p>
+      <div
+        id="projects-carousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#projects-carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Lessons Learned Project"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#projects-carousel"
+            data-bs-slide-to="1"
+            aria-label="Pixels Art Project"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#projects-carousel"
+            data-bs-slide-to="2"
+            aria-label="To Do List Project"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#projects-carousel"
+            data-bs-slide-to="3"
+            aria-label="Meme Generator Project"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#projects-carousel"
+            data-bs-slide-to="4"
+            aria-label="Color Guess Project"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#projects-carousel"
+            data-bs-slide-to="5"
+            aria-label="Mistery Letter Project"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/projects-carousel/lessons-learned.png"
+              class="d-block w-100"
+              alt="Lessons Learned Project"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/projects-carousel/pixels-art.png"
+              class="d-block w-100"
+              alt="Pixels Art Project"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/projects-carousel/todo-list.png"
+              class="d-block w-100"
+              alt="To Do List Project"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/projects-carousel/meme-generator.png"
+              class="d-block w-100"
+              alt="Meme Generator Project"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/projects-carousel/color-guess.png"
+              class="d-block w-100"
+              alt="Color Guess Project"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/projects-carousel/mistery-letter.png"
+              class="d-block w-100"
+              alt="Mistery Letter Project"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#projects-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#projects-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

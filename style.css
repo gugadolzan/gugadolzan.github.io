@@ -1,62 +1,113 @@
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
-body {
-  background-color: #E5E5E5;
-  color: #14213D;
-  font-family: 'Poppins', sans-serif;
-  width: 80%;
-  margin: auto;
+#about-me {
+  align-items: center;
+  background-color: rgb(217, 39, 39);
+  display: flex;
+  flex-direction: column;
+  padding: 2% 20%;
+  text-align: justify;
 }
 
-h1 {
+body {
+  background-color: rgb(28, 28, 28);
+  color: white;
+}
+
+.font-monospace span {
+  color: rgb(255, 33, 33);
+}
+
+#header-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#header-nav li {
+  margin-right: 40px;
+}
+
+#header-nav li a {
+  color: white;
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+#header-nav li a:hover {
+  color: rgb(255, 33, 33);
+}
+
+#header-section {
+  align-items: center;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  padding: 1% 5%;
+  width: 100%;
+}
+
+#header-section p {
+  margin-right: 40px;
   text-align: center;
 }
 
-hr {
-  border: 1px #FCA311 solid;
+#home {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-around;
+  padding: 5%;
 }
 
-ul {
-  background-color: #14213D;
-  border-radius: 20px;
-  color: #FFFFFF;
-  padding: 20px 40px;
+#main-text-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.link {
-  color: #FCA311;
-  text-decoration: none;
-}
-
-.button {
-  background-color: #FCA311;
-  border-radius: 4px;
-  color: #FFFFFF;
+#main-text {
   font-weight: bold;
-  padding: 4px 4px;
+}
+
+#name {
+  color: rgb(217, 39, 39);
+}
+
+#profile-img {
+  max-width: 30%;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  padding: 4% 20%;
+}
+
+#projects p {
+  font-weight: 400;
+  margin: 50px;
+  text-align: center;
+}
+
+#projects p a {
+  color: rgb(255, 33, 33);
   text-decoration: none;
+  transition: ease-in-out 0.1s;
 }
 
-/* .header {
-  padding: 1%;
-} */
-
-.about {
-  background-color: #14213D;
-  border-radius: 20px;
-  color: #FFFFFF;
-  padding: 20px;
+#projects p a:hover {
+  opacity: 0.5;
 }
 
-.picture {
-  border: px solid #FCA311;
-  border-radius: 40% 60% 40% 60%;
-  background-color: #FCA311;
+#socials {
+  display: flex;
+  flex-direction: column;
+  width: 4%;
 }
 
-/* div {
-  border: 2px red solid;
-} */
+#socials a img {
+  margin: 8px;
+  width: 100%;
+}
