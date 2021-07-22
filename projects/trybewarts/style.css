@@ -1,0 +1,187 @@
+@font-face {
+  font-family: harry-potter-font;
+  src: url('fonts/harry-potter-font.ttf');
+}
+
+@font-face {
+  font-family: wizarding-world-font;
+  src: url('fonts/wizard-world-simplified.ttf');
+}
+
+body {
+  background-color: rgb(239, 239, 239);
+  font-family: wizarding-world-font, sans-serif;
+}
+
+.btn {
+  background-color: rgb(78, 44, 131);
+  border-radius: 8px;
+  color: white;
+  padding: 1%;
+}
+
+.btn:hover {
+  background-color: rgb(62, 35, 105);
+  color: white;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1%;
+  width: 675px;
+}
+
+footer {
+  align-items: center;
+  background-color: rgb(60, 64, 74);
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  margin-top: 36px;
+}
+
+.form-check-input:checked {
+  background-color: rgb(78, 44, 131);
+  border-color: rgb(78, 44, 131);
+}
+
+.form-check-input:focus {
+  border-color: rgb(78, 44, 131);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(78, 44, 131, 0.25);
+}
+
+.form-filled {
+  background-color: rgb(215, 215, 215);
+  border-radius: 12px;
+  box-shadow: rgb(143, 143, 143) 0 0 1rem;
+}
+
+.form-label {
+  font-weight: 700;
+}
+
+.header {
+  align-items: center;
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 1% 1% 0;
+}
+
+input , select , textarea {
+  border-radius: 8px;
+  padding: 0.5%;
+}
+
+.trybewarts-login {
+  display: flex;
+  margin-right: 10%;
+}
+
+.trybewarts-login input {
+  margin: 0 1%;
+}
+
+.trybewarts-login button {
+  padding: 2% 8%;
+}
+
+#input-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1%;
+  width: 75%;
+}
+
+#input-content label {
+  margin: 1%;
+}
+
+#input-email-house {
+  display: flex;
+}
+
+#input-email , #house {
+  flex-grow: 1;
+}
+
+#input-family-content {
+  display: flex;
+}
+
+#input-family {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  width: 25%;
+}
+
+#input-fullname {
+  display: flex;
+  justify-content: space-around;
+}
+
+#input-fullname , #input-email-house {
+  margin: 0.5% 1%;
+}
+
+#input-fullname input , #input-email-house input {
+  margin: 0.5% 1%;
+}
+
+#input-fullname input:nth-child( 1 ) , #input-fullname input:nth-child( 2 ) {
+  flex-grow: 1;
+}
+
+#input-email-house label {
+  align-self: center;
+  margin-right: 1%;
+}
+
+#input-rate-textarea-infos {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+#input-rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+#label-content {
+  width: 100%;
+}
+
+#label-family {
+  margin-bottom: 2%;
+}
+
+#label-infos {
+  margin-top: 2%;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.trybewarts-header-logo {
+  height: 50px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-family: harry-potter-font, sans-serif;
+  font-size: xxx-large;
+  letter-spacing: 0.1em;
+}
