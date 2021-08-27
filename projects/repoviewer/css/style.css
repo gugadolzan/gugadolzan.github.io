@@ -1,0 +1,208 @@
+/**
+ * GitHub Corners, page css
+ * Author: Tim Holman
+ */
+
+@import 'corner.css';
+
+:root {
+  --black: #22272E;
+  --white: #CDD9E5;
+  --ice: #EBF1F6;
+  --grey: #2D333B;
+  --light-grey: #282E36;
+  --dark-grey: #1C2128;
+  --blue: #539BF5;
+  --red: #E34C26;
+  --green: #4A8B50;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+#header {
+  background-color: var(--grey);
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+  border-radius: 100%; /* pally */
+}
+
+.main-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body {
+  background-color: var(--black);
+}
+
+/* search buttons */
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 120px;
+}
+
+.in-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-search {
+  position: relative;
+  width: 300px;
+}
+
+.custom-search-input {
+  width: 100%;
+  border: 1px solid var(--light-grey);
+  border-radius: 10px; /* pally */
+  padding: 10px 100px 10px 20px;
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+  font-style: italic; /* pally */
+}
+
+.custom-search-botton , select {
+  position: absolute;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 10px; /* pally */
+}
+
+select {
+  top: 3px;
+  padding: 6px;
+  bottom: 3px;
+}
+
+button {
+  top: 3px;
+  bottom: 3px;
+  right: 3px;
+  padding: 6px;
+}
+
+#clear_btn {
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.github-corner {
+  width: 80px;
+  height: 80px;
+  fill: var(--green);
+  color: var(--grey);
+  position: absolute;
+  border: 0;
+  top: 0;
+  right: 0;
+}
+
+#head-title {
+  color: var(--ice);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+/* #status {
+  color: var(--ice);
+  font-size: 22px;
+  margin: 10px auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 2%;
+} */
+
+li {
+  color: var(--dark-grey);
+}
+
+
+.accordion {
+  padding: 10px;
+  margin: 5%;
+}
+
+main {
+  margin-bottom: 200px;
+}
+
+/* footer properties */
+.footer {
+  display: flex;
+  color: var(--ice);
+  background-color: var(--black);
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+/* tables */
+.pr-header , .pr-table {
+  display: flexbox;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.pr-header {
+  background-color: var(--green);
+}
+
+.pr-line:hover {
+  background-color: var(--blue);
+}
+
+tr {
+  background-color: var(--black);
+}
+
+tr:nth-child( even ) {
+  background-color: var(--light-grey);
+}
+
+#item1 , .accordion-item {
+  background-color: var(--black);
+}
+
+.accordion-collapse {
+  background-color: var(--black);
+}
